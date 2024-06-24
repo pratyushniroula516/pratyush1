@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratyush Jung Niroula - Portfolio</title>
+  
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+        header {
+            position: relative;
+            background: linear-gradient(to right, #1E88E5, #8BC34A); /* Mixture of light blue and light green */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .animated-text {
+            animation-name: slideInFromLeft;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-fill-mode: both;
+        }
+        @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            background-color: silver; /* Silver */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        h2 {
+            margin-bottom: 10px;
+            color: #333;
+            text-transform: uppercase;
+            font-size: 24px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+        p {
+            margin-bottom: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        li {
+            margin-right: 20px;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            position: relative;
+        }
+        li:hover {
+            background-color: #45a049; /* Darker Green */
+        }
+        .skills-list li {
+            background-color: transparent; /* Remove any background color */
+        }
+        .highlight {
+            background-color: #FFC107; /* Yellow */
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .section-title h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .section-title p {
+            font-size: 18px;
+            color: #666;
+        }
+        .skill-info {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 1;
+            width: max-content;
+            white-space: nowrap;
+        }
+        .skills-list li:hover .skill-info {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <h1 class="animated-text">Pratyush Jung Niroula</h1>
+        <p style="color: #ccc;">I am a tech enthusiast, web designer, and freelancer.</p>
+    </header>
+    <div class="container">
+        <section id="about">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <p>Welcome to my portfolio! Let me introduce myself.</p>
+            </div>
+            <p>I am passionate about creating engaging and user-friendly web experiences. With a strong background in web design and development, I strive to bring creativity and innovation to every project. Let's build something amazing together!</p>
+            <div class="highlight">Web Design | UI/UX | Freelancer</div>
+        </section>
+        <section id="skills">
+            <div class="section-title">
+                <h2>Skills</h2>
+                <p>Here are some of my key skills:</p>
+            </div>
+            <ul class="skills-list">
+                <li style="background-color: #2196F3;">HTML
+                    <div class="skill-info">HyperText Markup Language</div>
+                </li>
+                <li style="background-color: #FFC107;">CSS
+                    <div class="skill-info">Cascading Style Sheets</div>
+                </li>
+                <li style="background-color: #FF5722;">JavaScript
+                    <div class="skill-info">JavaScript is a programming language that enables interactive web pages.</div>
+                </li>
+                <li style="background-color: #4CAF50;">Web Design
+                    <div class="skill-info">Creating visually appealing and user-friendly web interfaces.</div>
+                </li>
+                <li style="background-color: #FF9800;">UI/UX
+                    <div class="skill-info">User Interface and User Experience design for intuitive interaction.</div>
+                </li>
+            </ul>
+        </section>
+        <section id="projects">
+            <div class="section-title">
+                <h2>Projects</h2>
+                <p>Check out some of my recent projects:</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Enjoy a friendly game of Tic Tac Toe anytime, anywhere with our web-based version.</p>
+                <a href="project1.html" class="btn">View Project</a>
+        
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Experience the magic of light with our interactive electric bulb.</p>
+                <a href="project2.html" class="btn">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <p>Step into the world of style and functionality with our stunning watch.</p>
+                <a href="project3.html" class="btn">View Project</a>
+            </div>
+        </section>
+        
+    </div>
+
+   
+</body>
+</html>
+
+
